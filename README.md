@@ -60,7 +60,7 @@ make run  # or: python src/run.py "Analyze ROAS drop"
 - Include Langfuse screenshots or JSON logs in `reports/observability/`.
 
 ## Release
-- Tag: `v1.0` and paste link here.
+- Tag:  [`v1.0`](https://github.com/Srijan-Ratrey/Kasparro-agentic-fb-analyst-Srijan-Ratrey/releases/tag/v1.0)
 
 ## Self-Review
 - Link to PR describing design choices & tradeoffs.
