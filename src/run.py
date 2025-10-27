@@ -24,6 +24,9 @@ from src.agents.evaluator import EvaluatorAgent
 from src.agents.creative_generator import CreativeGeneratorAgent
 
 # Configure logging
+# Ensure the logs directory exists before configuring file handlers so
+# logging.FileHandler doesn't fail in CI or fresh checkouts.
+Path('logs').mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=getattr(logging, config.get_logging_config().get('level', 'INFO')),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
