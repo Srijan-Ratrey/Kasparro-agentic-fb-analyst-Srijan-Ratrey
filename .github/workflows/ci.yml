@@ -24,6 +24,10 @@ jobs:
           pip install -r requirements.txt
           pip install jsonschema
 
+      - name: Ensure PYTHONPATH
+        # Add repository root to PYTHONPATH so tests can import `src` as a top-level package
+        run: echo "PYTHONPATH=${{ github.workspace }}" >> $GITHUB_ENV
+
       - name: Run tests
         run: |
           pytest -q || (echo 'pytest failed' && exit 1)
