@@ -1,0 +1,80 @@
+{
+  "analysis_id": "Analyze ROAS drop in last 7 days",
+  "timestamp": "2025-10-27T15:09:57.941499",
+  "insights": [
+    "ROAS has been declining over the past week",
+    "Video creatives perform better than image creatives",
+    "Lookalike audiences show higher conversion rates"
+  ],
+  "patterns": [
+    {
+      "pattern": "weekend_performance",
+      "description": "Lower performance on weekends"
+    },
+    {
+      "pattern": "creative_type_correlation",
+      "description": "Video > UGC > Image > Carousel"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "creative_optimization",
+      "priority": "high",
+      "recommendation": "Optimize ad creatives to address ROAS decline",
+      "actions": [
+        "Increase share of video creatives",
+        "A/B test headlines and offers",
+        "Pause underperforming creatives"
+      ],
+      "expected_impact": "high",
+      "timeline": "1-2 weeks",
+      "rationale": "ROAS has been declining over the past week",
+      "supporting_insights": [
+        "roas"
+      ],
+      "confidence": 0.6,
+      "expected_uplift": 0.12,
+      "supporting_metrics": {
+        "avg_roas": 3.2
+      },
+      "ab_tests": {
+        "test_name": "Video vs Image",
+        "objective": "Improve ROAS",
+        "duration": "2 weeks"
+      }
+    },
+    {
+      "type": "creative_investment",
+      "priority": "medium",
+      "recommendation": "Increase investment in video creative formats",
+      "actions": [
+        "Allocate more budget to video",
+        "Produce 2-3 new video concepts"
+      ],
+      "expected_impact": "medium",
+      "timeline": "1 week",
+      "rationale": "Video creatives perform better than image creatives",
+      "supporting_insights": [
+        "creative_type"
+      ],
+      "confidence": 0.7,
+      "expected_uplift": 0.08,
+      "supporting_metrics": {
+        "video_share": null
+      }
+    },
+    {
+      "type": "general",
+      "priority": "low",
+      "recommendation": "Lookalike audiences show higher conversion rates",
+      "actions": [],
+      "expected_impact": "low",
+      "timeline": "",
+      "rationale": "Lookalike audiences show higher conversion rates",
+      "supporting_insights": [],
+      "confidence": 0.5,
+      "expected_uplift": 0.02
+    }
+  ],
+  "confidence_scores": 0.5
+}

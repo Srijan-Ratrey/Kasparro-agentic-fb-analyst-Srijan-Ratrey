@@ -1,0 +1,1204 @@
+{
+  "memory": {
+    "analysis_20251027_134240": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [],
+        "recommendations": [],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T13:42:40.392000",
+      "duration": "0.20 seconds"
+    },
+    "analysis_20251027_140215": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T14:02:15.441095",
+      "duration": "0.30 seconds"
+    },
+    "analysis_20251027_140823": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "creative_recommendations",
+          "agent": "creative_generator",
+          "description": "Generate creative recommendations",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "recommendations",
+            "creative_suggestions"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "creative_recommendations": {
+          "recommendations": [
+            "Increase video creative budget allocation",
+            "Test new UGC content formats",
+            "Optimize for lookalike audiences"
+          ],
+          "creative_suggestions": [
+            "Create lifestyle video content",
+            "Develop user testimonial campaigns",
+            "A/B test different creative messages"
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [
+          "Increase video creative budget allocation",
+          "Test new UGC content formats",
+          "Optimize for lookalike audiences"
+        ],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T14:08:23.961474",
+      "duration": "0.41 seconds"
+    },
+    "analysis_20251027_140850": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "creative_recommendations",
+          "agent": "creative_generator",
+          "description": "Generate creative recommendations",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "recommendations",
+            "creative_suggestions"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "creative_recommendations": {
+          "recommendations": [
+            "Increase video creative budget allocation",
+            "Test new UGC content formats",
+            "Optimize for lookalike audiences"
+          ],
+          "creative_suggestions": [
+            "Create lifestyle video content",
+            "Develop user testimonial campaigns",
+            "A/B test different creative messages"
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [
+          "Increase video creative budget allocation",
+          "Test new UGC content formats",
+          "Optimize for lookalike audiences"
+        ],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T14:08:50.166309",
+      "duration": "0.41 seconds"
+    },
+    "analysis_20251027_141107": {
+      "query": "Analyze Broad audience shows 8.6% lower CTR than Lookalike",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze Broad audience shows 8.6% lower CTR than Lookalike",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze Broad audience shows 8.6% lower CTR than Lookalike"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "creative_recommendations",
+          "agent": "creative_generator",
+          "description": "Generate creative recommendations",
+          "inputs": {
+            "query": "Analyze Broad audience shows 8.6% lower CTR than Lookalike"
+          },
+          "expected_outputs": [
+            "recommendations",
+            "creative_suggestions"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze Broad audience shows 8.6% lower CTR than Lookalike"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "creative_recommendations": {
+          "recommendations": [
+            "Increase video creative budget allocation",
+            "Test new UGC content formats",
+            "Optimize for lookalike audiences"
+          ],
+          "creative_suggestions": [
+            "Create lifestyle video content",
+            "Develop user testimonial campaigns",
+            "A/B test different creative messages"
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [
+          "Increase video creative budget allocation",
+          "Test new UGC content formats",
+          "Optimize for lookalike audiences"
+        ],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T14:11:07.183687",
+      "duration": "0.41 seconds"
+    },
+    "analysis_20251027_150546": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "creative_recommendations",
+          "agent": "creative_generator",
+          "description": "Generate creative recommendations",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "recommendations",
+            "creative_suggestions"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "creative_recommendations": {
+          "recommendations": [
+            "Increase video creative budget allocation",
+            "Test new UGC content formats",
+            "Optimize for lookalike audiences"
+          ],
+          "creative_suggestions": [
+            "Create lifestyle video content",
+            "Develop user testimonial campaigns",
+            "A/B test different creative messages"
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [
+          "Increase video creative budget allocation",
+          "Test new UGC content formats",
+          "Optimize for lookalike audiences"
+        ],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T15:05:46.129121",
+      "duration": "0.41 seconds"
+    },
+    "analysis_20251027_150957": {
+      "query": "Analyze ROAS drop in last 7 days",
+      "workflow": [
+        {
+          "step": "data_analysis",
+          "agent": "data_agent",
+          "description": "Analyze performance metrics and trends",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days",
+            "data_summary": {
+              "total_records": 4500,
+              "date_range": {
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              },
+              "campaigns": 366,
+              "total_spend": 2105579.9,
+              "total_revenue": 12265700.719999999,
+              "avg_roas": 9.634399910932975,
+              "platforms": {
+                "Facebook": 2269,
+                "Instagram": 2231
+              },
+              "countries": {
+                "US": 2465,
+                "IN": 1149,
+                "UK": 886
+              },
+              "creative_types": {
+                "Video": 1585,
+                "Image": 1546,
+                "UGC": 686,
+                "Carousel": 683
+              }
+            }
+          },
+          "expected_outputs": [
+            "metrics_analysis",
+            "trends",
+            "anomalies"
+          ]
+        },
+        {
+          "step": "insight_generation",
+          "agent": "insight_agent",
+          "description": "Generate insights and identify patterns",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "insights",
+            "patterns",
+            "correlations"
+          ]
+        },
+        {
+          "step": "creative_recommendations",
+          "agent": "creative_generator",
+          "description": "Generate creative recommendations",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "recommendations",
+            "creative_suggestions"
+          ]
+        },
+        {
+          "step": "evaluation",
+          "agent": "evaluator",
+          "description": "Evaluate findings and validate insights",
+          "inputs": {
+            "query": "Analyze ROAS drop in last 7 days"
+          },
+          "expected_outputs": [
+            "evaluation",
+            "confidence_scores",
+            "validation"
+          ]
+        }
+      ],
+      "results": {
+        "data_analysis": {
+          "metrics": {
+            "avg_roas": 3.2,
+            "total_spend": 15000,
+            "total_revenue": 48000,
+            "avg_ctr": 0.018
+          },
+          "trends": {
+            "roas_trend": -0.15,
+            "spend_trend": 0.05,
+            "revenue_trend": -0.08
+          },
+          "anomalies": [
+            {
+              "date": "2025-01-13",
+              "metric": "roas",
+              "value": 0.0,
+              "z_score": 3.2
+            }
+          ]
+        },
+        "insight_generation": {
+          "insights": [
+            "ROAS has been declining over the past week",
+            "Video creatives perform better than image creatives",
+            "Lookalike audiences show higher conversion rates"
+          ],
+          "patterns": [
+            {
+              "pattern": "weekend_performance",
+              "description": "Lower performance on weekends"
+            },
+            {
+              "pattern": "creative_type_correlation",
+              "description": "Video > UGC > Image > Carousel"
+            }
+          ]
+        },
+        "creative_recommendations": {
+          "recommendations": [
+            {
+              "type": "creative_optimization",
+              "priority": "high",
+              "recommendation": "Optimize ad creatives to address ROAS decline",
+              "actions": [
+                "Increase share of video creatives",
+                "A/B test headlines and offers",
+                "Pause underperforming creatives"
+              ],
+              "expected_impact": "high",
+              "timeline": "1-2 weeks",
+              "rationale": "ROAS has been declining over the past week",
+              "supporting_insights": [
+                "roas"
+              ],
+              "confidence": 0.6,
+              "expected_uplift": 0.12,
+              "supporting_metrics": {
+                "avg_roas": 3.2
+              },
+              "ab_tests": {
+                "test_name": "Video vs Image",
+                "objective": "Improve ROAS",
+                "duration": "2 weeks"
+              }
+            },
+            {
+              "type": "creative_investment",
+              "priority": "medium",
+              "recommendation": "Increase investment in video creative formats",
+              "actions": [
+                "Allocate more budget to video",
+                "Produce 2-3 new video concepts"
+              ],
+              "expected_impact": "medium",
+              "timeline": "1 week",
+              "rationale": "Video creatives perform better than image creatives",
+              "supporting_insights": [
+                "creative_type"
+              ],
+              "confidence": 0.7,
+              "expected_uplift": 0.08,
+              "supporting_metrics": {
+                "video_share": null
+              }
+            },
+            {
+              "type": "general",
+              "priority": "low",
+              "recommendation": "Lookalike audiences show higher conversion rates",
+              "actions": [],
+              "expected_impact": "low",
+              "timeline": "",
+              "rationale": "Lookalike audiences show higher conversion rates",
+              "supporting_insights": [],
+              "confidence": 0.5,
+              "expected_uplift": 0.02
+            }
+          ],
+          "creative_suggestions": [
+            {
+              "type": "creative_inspiration",
+              "source": "Top performers",
+              "suggestion": "Create lifestyle video content",
+              "creative_elements": [
+                "Story-driven visuals",
+                "Short hook",
+                "Strong CTA"
+              ],
+              "roas": 3.2
+            }
+          ]
+        },
+        "evaluation": {
+          "confidence_scores": {
+            "roas_decline": 0.85,
+            "creative_performance": 0.92,
+            "audience_insights": 0.78
+          },
+          "validation": {
+            "statistical_significance": true,
+            "sample_size": "adequate",
+            "data_quality": "high"
+          }
+        }
+      },
+      "summary": {
+        "key_findings": [
+          "ROAS has been declining over the past week",
+          "Video creatives perform better than image creatives",
+          "Lookalike audiences show higher conversion rates"
+        ],
+        "recommendations": [
+          {
+            "type": "creative_optimization",
+            "priority": "high",
+            "recommendation": "Optimize ad creatives to address ROAS decline",
+            "actions": [
+              "Increase share of video creatives",
+              "A/B test headlines and offers",
+              "Pause underperforming creatives"
+            ],
+            "expected_impact": "high",
+            "timeline": "1-2 weeks",
+            "rationale": "ROAS has been declining over the past week",
+            "supporting_insights": [
+              "roas"
+            ],
+            "confidence": 0.6,
+            "expected_uplift": 0.12,
+            "supporting_metrics": {
+              "avg_roas": 3.2
+            },
+            "ab_tests": {
+              "test_name": "Video vs Image",
+              "objective": "Improve ROAS",
+              "duration": "2 weeks"
+            }
+          },
+          {
+            "type": "creative_investment",
+            "priority": "medium",
+            "recommendation": "Increase investment in video creative formats",
+            "actions": [
+              "Allocate more budget to video",
+              "Produce 2-3 new video concepts"
+            ],
+            "expected_impact": "medium",
+            "timeline": "1 week",
+            "rationale": "Video creatives perform better than image creatives",
+            "supporting_insights": [
+              "creative_type"
+            ],
+            "confidence": 0.7,
+            "expected_uplift": 0.08,
+            "supporting_metrics": {
+              "video_share": null
+            }
+          },
+          {
+            "type": "general",
+            "priority": "low",
+            "recommendation": "Lookalike audiences show higher conversion rates",
+            "actions": [],
+            "expected_impact": "low",
+            "timeline": "",
+            "rationale": "Lookalike audiences show higher conversion rates",
+            "supporting_insights": [],
+            "confidence": 0.5,
+            "expected_uplift": 0.02
+          }
+        ],
+        "confidence_level": "high",
+        "next_steps": []
+      },
+      "timestamp": "2025-10-27T15:09:57.941499",
+      "duration": "0.41 seconds"
+    }
+  },
+  "metadata": {
+    "analysis_20251027_134240": {
+      "timestamp": "2025-10-27T13:42:40.394213",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T13:42:40.394218"
+    },
+    "analysis_20251027_140215": {
+      "timestamp": "2025-10-27T14:02:15.444785",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T14:02:15.444791"
+    },
+    "analysis_20251027_140823": {
+      "timestamp": "2025-10-27T14:08:23.962562",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T14:08:23.962564"
+    },
+    "analysis_20251027_140850": {
+      "timestamp": "2025-10-27T14:08:50.169812",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T14:08:50.169816"
+    },
+    "analysis_20251027_141107": {
+      "timestamp": "2025-10-27T14:11:07.187411",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T14:11:07.187415"
+    },
+    "analysis_20251027_150546": {
+      "timestamp": "2025-10-27T15:05:46.130407",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T15:05:46.130409"
+    },
+    "analysis_20251027_150957": {
+      "timestamp": "2025-10-27T15:09:57.943686",
+      "access_count": 0,
+      "last_accessed": "2025-10-27T15:09:57.943687"
+    }
+  },
+  "last_saved": "2025-10-27T15:09:57.943689"
+}

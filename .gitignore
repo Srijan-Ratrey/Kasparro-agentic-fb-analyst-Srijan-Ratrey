@@ -1,0 +1,15 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+.vscode/
+logs/*.log
+reports/*.log
+# Ignore virtual env and editor files
+.idea/
+
+# Keep reports in repo by default but allow ignoring if needed
+# Uncomment the following to ignore generated reports
+# reports/

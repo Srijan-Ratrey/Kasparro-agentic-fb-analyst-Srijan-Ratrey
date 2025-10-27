@@ -1,0 +1,96 @@
+# Kasparro Agentic Facebook Performance Analyst Configuration
+
+# Python version requirement
+python: "3.10"
+
+# Random seed for reproducible results
+random_seed: 42
+
+# Confidence thresholds for analysis
+confidence_min: 0.6
+confidence_high: 0.8
+confidence_critical: 0.9
+
+# Data configuration
+use_sample_data: false
+data_csv_path: "synthetic_fb_ads_undergarments.csv"
+sample_size: 1000
+
+# Agent configuration
+agents:
+  planner:
+    max_iterations: 10
+    timeout_seconds: 300
+    memory_limit_mb: 512
+  
+  data_agent:
+    batch_size: 100
+    analysis_window_days: 30
+    anomaly_threshold: 2.0
+  
+  insight_agent:
+    pattern_min_support: 0.1
+    correlation_threshold: 0.7
+    trend_min_periods: 7
+  
+  evaluator:
+    validation_threshold: 0.8
+    quality_score_weight: 0.6
+  
+  creative_generator:
+    max_variations: 5
+    creativity_score: 0.7
+
+# MCP Server configuration
+mcp_server:
+  host: "localhost"
+  port: 8080
+  websocket_port: 8081
+  max_connections: 100
+  heartbeat_interval: 30
+
+# Memory system configuration
+memory:
+  short_term:
+    max_items: 1000
+    ttl_seconds: 3600
+  
+  long_term:
+    max_items: 10000
+    persistence_file: "data/memory/long_term.json"
+  
+  episodic:
+    max_sessions: 100
+    session_ttl_hours: 24
+  
+  semantic:
+    knowledge_graph_file: "data/memory/semantic_graph.json"
+    max_nodes: 5000
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/agent_system.log"
+  max_size_mb: 100
+  backup_count: 5
+
+# Report configuration
+reports:
+  output_dir: "reports"
+  formats: ["markdown", "json"]
+  include_charts: true
+  chart_format: "png"
+
+# Security configuration
+security:
+  enable_auth: false
+  api_key_required: false
+  rate_limit_per_minute: 100
+  max_request_size_mb: 10
+
+# Performance configuration
+performance:
+  max_concurrent_agents: 5
+  cache_ttl_seconds: 1800
+  enable_compression: true

@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install jsonschema
+
+      - name: Run tests
+        run: |
+          pytest -q || (echo 'pytest failed' && exit 1)
+
+      - name: Run analysis (sanity)
+        run: |
+          python run.py "CI sanity check: Generate reports" || (echo 'run.py failed' && exit 1)
+
+      - name: Validate generated reports against schemas
+        run: |
+          python scripts/ci_validate_reports.py || (echo 'Schema validation failed' && exit 1)
