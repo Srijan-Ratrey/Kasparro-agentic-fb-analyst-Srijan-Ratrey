@@ -33,7 +33,9 @@ jobs:
           pytest -q || (echo 'pytest failed' && exit 1)
 
       - name: Run analysis (sanity)
+        # Ensure logs directory exists (repo typically ignores logs/) so run.py's FileHandler won't fail
         run: |
+          mkdir -p logs
           python run.py "CI sanity check: Generate reports" || (echo 'run.py failed' && exit 1)
 
       - name: Validate generated reports against schemas
