@@ -11,6 +11,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 # Import the modules to test
 import sys
@@ -211,8 +212,7 @@ class TestPlannerAgent:
         assert "task_decomposition" in capability_names
         assert "agent_coordination" in capability_names
     
-    @pytest.mark.asyncio
-    async def test_planner_workflow_planning(self, planner_agent):
+    def test_planner_workflow_planning(self, planner_agent):
         """Test workflow planning functionality."""
         task = {
             "task_type": "workflow_planning",
@@ -220,7 +220,7 @@ class TestPlannerAgent:
             "data_summary": {"total_records": 1000}
         }
         
-        result = await planner_agent.execute_task(task)
+        result = asyncio.run(planner_agent.execute_task(task))
         
         assert "workflow" in result
         assert "estimated_duration" in result
@@ -253,14 +253,17 @@ class TestDataAgent:
         assert "anomaly_detection" in capability_names
         assert "trend_analysis" in capability_names
     
-    @pytest.mark.asyncio
-    async def test_data_agent_analysis(self, data_agent):
+    def test_data_agent_analysis(self, data_agent):
         """Test data analysis functionality."""
         # Mock data processor
         mock_processor = Mock()
         mock_processor.df = pd.DataFrame({
             'spend': [100, 200, 150],
             'revenue': [500, 1000, 750],
+            'impressions': [1000, 2000, 1500],
+            'clicks': [50, 100, 75],
+            'ctr': [0.05, 0.05, 0.05],
+            'purchases': [5, 10, 7],
             'roas': [5.0, 5.0, 5.0]
         })
         mock_processor.get_data_summary.return_value = {
@@ -269,6 +272,8 @@ class TestDataAgent:
             'total_revenue': 2250,
             'avg_roas': 5.0
         }
+        # Ensure recent performance method returns a dataframe-like object
+        mock_processor.get_recent_performance.return_value = mock_processor.df
         
         data_agent.set_data_processor(mock_processor)
         
@@ -278,7 +283,7 @@ class TestDataAgent:
             "data_summary": {"total_records": 3}
         }
         
-        result = await data_agent.execute_task(task)
+        result = asyncio.run(data_agent.execute_task(task))
         
         assert "metrics" in result
         assert "overall" in result["metrics"]
@@ -299,8 +304,7 @@ class TestInsightAgent:
         assert insight_agent.name == "InsightAgent"
         assert insight_agent.status == AgentStatus.IDLE
     
-    @pytest.mark.asyncio
-    async def test_insight_generation(self, insight_agent):
+    def test_insight_generation(self, insight_agent):
         """Test insight generation functionality."""
         task = {
             "task_type": "insight_generation",
@@ -315,7 +319,7 @@ class TestInsightAgent:
             "query": "Analyze performance"
         }
         
-        result = await insight_agent.execute_task(task)
+        result = asyncio.run(insight_agent.execute_task(task))
         
         assert "insights" in result
         assert "patterns" in result
@@ -338,8 +342,7 @@ class TestEvaluatorAgent:
         assert evaluator_agent.name == "Evaluator"
         assert evaluator_agent.status == AgentStatus.IDLE
     
-    @pytest.mark.asyncio
-    async def test_insight_validation(self, evaluator_agent):
+    def test_insight_validation(self, evaluator_agent):
         """Test insight validation functionality."""
         task = {
             "task_type": "insight_validation",
@@ -361,7 +364,7 @@ class TestEvaluatorAgent:
             }
         }
         
-        result = await evaluator_agent.execute_task(task)
+        result = asyncio.run(evaluator_agent.execute_task(task))
         
         assert "validation_results" in result
         assert "confidence_scores" in result
@@ -383,8 +386,7 @@ class TestCreativeGeneratorAgent:
         assert creative_agent.name == "CreativeGenerator"
         assert creative_agent.status == AgentStatus.IDLE
     
-    @pytest.mark.asyncio
-    async def test_creative_recommendations(self, creative_agent):
+    def test_creative_recommendations(self, creative_agent):
         """Test creative recommendations functionality."""
         task = {
             "task_type": "creative_recommendations",
@@ -409,7 +411,7 @@ class TestCreativeGeneratorAgent:
             }
         }
         
-        result = await creative_agent.execute_task(task)
+        result = asyncio.run(creative_agent.execute_task(task))
         
         assert "recommendations" in result
         assert "creative_suggestions" in result
@@ -489,8 +491,7 @@ class TestReportGenerator:
 class TestIntegration:
     """Integration tests for the complete system."""
     
-    @pytest.mark.asyncio
-    async def test_end_to_end_analysis(self):
+    def test_end_to_end_analysis(self):
         """Test end-to-end analysis workflow."""
         # This would test the complete workflow from query to report
         # For now, we'll test individual components
