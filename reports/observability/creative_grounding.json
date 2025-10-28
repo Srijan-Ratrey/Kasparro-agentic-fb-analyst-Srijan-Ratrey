@@ -1,0 +1,62 @@
+{
+  "grounding_examples": [
+    {
+      "campaign": "LowCTR Campaign A",
+      "original_ad": {
+        "headline": "New Arrival - Save Now",
+        "body": "Check out our new undergarments. Comfortable and affordable.",
+        "cta": "Shop Now"
+      },
+      "metrics": {
+        "ctr": 0.012,
+        "impressions": 25000,
+        "clicks": 300
+      },
+      "generated_improvements": [
+        {
+          "id": "A-variant-1",
+          "copy": "Feel the difference — lightweight & breathable undergarments made for all-day comfort. Try them risk-free.",
+          "cta": "See Comfort Options",
+          "rationale": "Shifts from price-first messaging to benefit-first (comfort). Uses invitation language and risk-reduction.",
+          "expected_change": "Increase engagement by clearer value proposition and emotional framing"
+        },
+        {
+          "id": "A-variant-2",
+          "copy": "Real reviews, real fit. Customers love our fit — shop the styles that actually stay comfortable all day.",
+          "cta": "View Customer Favorites",
+          "rationale": "Introduce social proof and specificity to increase credibility and relevance.",
+          "expected_change": "Higher CTR by leveraging social proof and specificity"
+        }
+      ]
+    },
+    {
+      "campaign": "LowCTR Campaign B",
+      "original_ad": {
+        "headline": "Discount this weekend",
+        "body": "Limited time discount on our bestsellers. Don’t miss out!",
+        "cta": "Buy"
+      },
+      "metrics": {
+        "ctr": 0.009,
+        "impressions": 18000,
+        "clicks": 162
+      },
+      "generated_improvements": [
+        {
+          "id": "B-variant-1",
+          "copy": "Save 20% on styles that improve comfort — your most comfortable day starts today. Limited stock.",
+          "cta": "Claim 20%",
+          "rationale": "Combines promotion with benefit and urgency; clearer proposition than generic sale language.",
+          "expected_change": "Higher CTR from relevance + urgency"
+        },
+        {
+          "id": "B-variant-2",
+          "copy": "Which style fits you best? Take our 30-second fit quiz and get 10% off your first order.",
+          "cta": "Take Fit Quiz",
+          "rationale": "Reduce friction by offering personalized fit guidance; quiz engagement can lift click intent.",
+          "expected_change": "Better qualified clicks and higher conversion funnel efficiency"
+        }
+      ]
+    }
+  ]
+}

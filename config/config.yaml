@@ -14,6 +14,8 @@ confidence_critical: 0.9
 # Data configuration
 use_sample_data: false
 data_csv_path: "synthetic_fb_ads_undergarments.csv"
+  # DATA_CSV: Path to the full dataset used in production runs. For local testing you can use `data/sample_ads_120.csv`.
+  # Example: DATA_CSV=/absolute/path/to/full_dataset.csv
 sample_size: 1000
 
 # Agent configuration

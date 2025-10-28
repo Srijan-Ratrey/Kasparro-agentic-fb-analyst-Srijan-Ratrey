@@ -1,0 +1,12 @@
+{
+  "release": "v1.0",
+  "run_summary": {
+    "query": "Sanity: v1.0 release test",
+    "evaluator": {
+      "confidence": 0.78,
+      "threshold": 0.6,
+      "decision": "ACCEPT"
+    },
+    "notes": "Evaluator confidence >= 0.6, test passed for release benchmark."
+  }
+}
